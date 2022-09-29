@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<b  
+    <meta charset="UTF-8">
+    <title>5_위치속성</title>
+ <!--
+        날짜 : 2022/09/21
+        이름 : 이상헌
+        내용 : 위치속성 실습하기
+
+        position : static
+        - 상대좌표영역
+        - 모든 출력태그의 기본 position 값
+        - 이동측정(left, top, right, botton) 적용x
+
+        position : relative
+        -상대좌표영역
+        - 이동측정(left, top, right, botton) 적용o
+        - absolute 자식태그의 부모 태그영역으로 
+
+
+
+
+        position : absolute
+        position : fixed
+    -->
+<style>
+    section {
+        display: inline block;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    section > div:nth-of-type(1) (background: #ff0000;)
+    section > div:nth-of-type(2) (background: #00ff00;)
+    section > div:nth-of-type(3) (background: #000ff;)
+
+    /* position : static */
+    .s1 > div:nth-of-type(1) {position: static; left: 10px; top: 10px;}
+    .s1 > div:nth-of-type(2) {position: static; left: 10px; bottom: 10px;}
+    .s1 > div:nth-of-type(3) {position: static; right: 10px; bottom: 10px;}
+
+
+
+    /* position : relative */
+    .s2 > div:nth-of-type(1) {position: relative; left: 10px; top: 10px;}
+    .s2 > div:nth-of-type(2) {position: relative; left: 10px; bottom: 10px;}
+    .s2 > div:nth-of-type(3) {position: relative; right: -10px; bottom: 10px;}
+
+
+    /* position : absolute */
+    .s3 > div:nth-of-type(1) {position: absolute; left: 10px; top: 100px;}
+    .s3 > div:nth-of-type(2) {position: absolute; right: 10px; bottom: 50px;}
+    .s3 > div:nth-of-type(3) {position: absolute; left: 10px; bottom: 10px;}
+
+
+    /* position : fixed */
+    .s4 > div:nth-of-type(1) {position: fixed; right: 10px; top: 100px;}
+    .s4 > div:nth-of-type(2) {position: fixed; right: 20px; top: 50px;}
+    .s4 > div:nth-of-type(3) {position: fixed; right: 30px; top: 10px;}
+    
+
+
+
+
+</style>
+
+</head>
+<body>
+    <h3>위치속성</h3>
+
+    <h4>position</h4>
+
+    <section class="s1">
+    <div></div>
+    <div></div>
+    <div></div>
+    </section>
+    <section class="s2">
+        <div></div>
+        <div></div>
+        <div></div>
+        </section>
+        <section class="s3">
+            <div></div>
+            <div></div>
+            <div></div>
+            </section>
+            <section class="s4">
+                <div></div>
+                <div></div>
+                <div></div>
+                </section>
+    
+    <h4>Z1</h4>            
+
+
+
+</body>
+
+</html>
