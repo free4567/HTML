@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real113</title>
+</head> 
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    u1, o1 {list-style: none;}
+    a {text-decoration: none; color: #111;}
+    input, textarea {outline: none;}
+
+    #wrapper {
+        width: 100%;
+        height: auto;
+    }    
+
+    /* 헤더 */
+    header {
+        width: 100%;
+        height: 80px;
+        background: url('./img/header_bg.gif');
+    }
+
+    header > div {
+        position: relative;
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    header .logo {}
+    header .gnb {}
+    header .gnb > li {}
+    header .gnb > li > a {}
+
+header .lastst {
+    position: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 30px;
+}
+header .lastst > a {position: relative;}
+header .lastst > a:nth-child(1) {top: 4px;}
+header .lastst > a:nth-child(2) {top: -4px; left: 6px;}
+header .lastst > a:nth-child(2) {content: url('./img/ico_latest.gif');} 
+        
+/* 메인 */
+main {
+    width: 1000px;
+    height: auto;
+    margin: 5px auto;
+}
+
+main > div {
+    overflow: hidden;
+}
+
+</style>    
+    <div id="wrapper">
+        <header>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </header>
+        <main>
+           <section>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+           </section>
+           <article>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+           </article>
+        </main>
+        <footer>
+            <div></div>
+        </footer>       
+    </div>
+</body>             
+</html>
